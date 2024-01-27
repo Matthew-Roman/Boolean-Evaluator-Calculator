@@ -47,7 +47,7 @@ enum Lexeme {
         }
     }
 }
-
+//some useful extensions
 extension String {
     func extendBinaryValue(with padding: Character, toLength length: Int) -> String {
         let paddingWidth = length - self.count
