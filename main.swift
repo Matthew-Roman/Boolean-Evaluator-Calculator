@@ -66,18 +66,20 @@ extension Int {
 func stringToBinary(amount: Int) {
     var column = 0
     let amountOfBinaryNumbers = 2.powerOfTwo(amount)
-    print("this is he amount" + String(amountOfBinaryNumbers))
+    print("truth table: ")
     for number in 0 ..< amountOfBinaryNumbers{
         column += 1
         //execute this function that will take it an calculate it.
         let binaryDigits = String(number, radix: 2).extendBinaryValue(with: "0", toLength: amount)
         print("column \(column): " + binaryDigits)
-        print(combine(binaryColumn: binaryDigits, arrayOfOperands: arrayOfOperands))
+        // refer back to combine as it makes the array of operands and digits for calculation
+        //combine(binaryColumn: binaryDigits, arrayOfOperands: arrayOfOperands))
     }
     
 }
 
-
+// this is a useless chatgpt function
+// I might change it later cause its giving me cancer
 func combine(binaryColumn: String, arrayOfOperands: [String]) -> [Any] {
  var truthValueArray: [Any] = []
     let binaryArray = Array(binaryColumn)
@@ -93,22 +95,22 @@ func combine(binaryColumn: String, arrayOfOperands: [String]) -> [Any] {
     return truthValueArray
 }
 
-struct Operation {
-    func negate(digit: String) {
+// struct Operation {
+//     func negate(digit: String) {
         
-    }
-}
+//     }
+// }
 
-func calculate(array: String) -> String {
-    //∧,∨,⊕,→,=,≠, ¬
-    for string in array {
-        switch string {
-         case string == "¬" {
+// func calculate(array: String) -> String {
+//     //∧,∨,⊕,→,=,≠, ¬
+//     for string in array {
+//         switch string {
+//          case string == "¬" {
                  
-             }
-        }
-    }
-}
+//              }
+//         }
+//     }
+// }
 
 
 struct LexemeSource {
@@ -126,7 +128,6 @@ struct LexemeSource {
             //when the code is printed the spaces are also includes as characters
             
         }        
-        print(arrayOfOperands)
         stringToBinary(amount: numberOfWords)
     }
 }
