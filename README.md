@@ -1,1 +1,1 @@
-I'll be honest Mr. Ben I didn't get the calculations done, but atleast i was able to to do the binary conversions
+I'll be honest Mr. Ben I didn't get the calculations done, but atleast I got the truth table
